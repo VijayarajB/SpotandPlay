@@ -7,7 +7,15 @@
   .footer-row {
     display: flex;
     flex-wrap: wrap;
-    justify-content: center;
+    justify-content: space-around;
+    padding: 5px 0;
+  }
+  .footer-row2 {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    padding: 10px 0;
+    background-color: #003b5b;
   }
   
   .footer-column {
@@ -51,17 +59,56 @@
 }
 
 .footer-links :hover {
-  color: #000;
+  color: #003b5b;
+  font-weight: bold;
 }
   
   .footer-links li {
-    margin-bottom: 5px;
+    margin-bottom: 3px;    
   }
   
   .footer-social-icons {
     display: flex;
     justify-content: center;
     margin-top: 10px;
+    margin-right: 85px;
+  }
+
+  .footer-widget-heading h3 {
+    color: #000;
+    font-size: 20px;
+    font-weight: 600;
+    margin-bottom: 20px;
+    margin-right: 170px;
+    position: relative;
+  }
+  .footer-widget-heading h3::before {
+    content: "";
+    position: absolute;
+    justify-content:center;
+    bottom: -15px;
+    height: 2px;
+    width: 100px;
+    background: #ff5e14;
+  }
+
+  .footer-widget-followus h3 {
+    color: #000;
+    font-size: 20px;
+    font-weight: 600;
+    margin-bottom: 50px;
+    margin-right: 150px;
+    position: relative;
+  }
+  .footer-widget-followus h3::before {
+    content: "";
+    position: absolute;
+    justify-content:center;
+    left: 20;
+    bottom: -15px;
+    height: 2px;
+    width: 100px;
+    background: #ff5e14;
   }
   
   .footer-social-icon {
@@ -80,15 +127,25 @@
   margin: 0 10px;
   text-decoration: underline;
   font-weight: 500;
-  color: #333;
+  color: #fff;
+  margin-bottom: 10px;
+
 }
 
 .footer-links-row a:hover {
-  color: #000;
+  color: #ff5e14;
 }
-
-  
   .footer-text:last-child {
     margin-top: 10px;
   }
-  
+
+  .copyright-text p {
+    margin: 0;
+    font-size: 14px;          
+    color: #fff;
+    margin-top: 12px;
+    margin-right: 400px;
+  }
+  .copyright-text p a{
+    color: #ff5e14;
+  }
